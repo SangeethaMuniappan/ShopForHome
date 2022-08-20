@@ -150,5 +150,6 @@ export class AdminComponent implements OnInit {
     } else {
       alert("Please select a file first")
     }
+    
   }
 }

@@ -10,8 +10,8 @@
   </div>
   <!-- Shopping cart table -->
   <div class="card">
-    <div class="card-header">
-      <h2>Shopping Cart</h2>
+    <div class="card-header" style="background-color: grey;">
+      <h2 style="margin-left: 40%; color: white;">Shopping Cart</h2>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -27,8 +27,8 @@
                 Quantity
               </th>
               <th class="text-right py-3 px-4" style="width: 100px">Discount</th>
-              <th class="text-center align-middle py-3 px-0" style="width: 40px">
-                <a href="#"  class="shop-tooltip float-none text-light" title="" data-original-title="Clear cart"><i class="ino ion-md-trash"></i></a>
+              <th class="text-center align-middle py-3 px-0" style="width: 100px">
+                <a href="#"  class="shop-tooltip float-none text-light" title="" data-original-title="Clear cart"><i class="ino ion-md-trash"></i></a>Remove
               </th>
             </tr>
           </thead>
@@ -55,8 +55,8 @@
               <td class="text-right font-weight-semibold align-middle p-4">
                 {{ cart.discount_amt }}
               </td>
-              <td class="text-center align-middle px-0">
-                <a  class="shop-tooltip close float-none text-danger" title="" (click)="DeleteItem(cart.id)" data-original-title="Remove" >Remove</a >
+              <td class="text-center align-middle px-0" >
+                <a class="shop-tooltip close float-none text-danger" title="" (click)="DeleteItem(cart.id)" data-original-title="Remove" style="color: red; cursor: pointer"><strong>X</strong></a>
               </td>
             </tr>
           </tbody>
@@ -79,7 +79,7 @@
         <button type="button" routerLink="" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3" >
           Back to shopping
         </button>
-        <button (click)="CheckOut()" type="button" class="btn btn-lg btn-primary"  >
+        <button (click)="CheckOut()" type="button" class="btn btn-lg btn-primary" style="margin-left: 70%;" >
           Checkout
         </button>
       </div>
